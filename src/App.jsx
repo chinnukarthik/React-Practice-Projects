@@ -1,11 +1,12 @@
-import ProductShowcase from "./assets/colorChange/Product-page";
-import ImageSlider from "./assets/image-slider";
+// import Accordion from "./assets/accodion/accodion";
+// import Starrating from "./assets/Star Rating";
+
+import ProductShowcase from "./assets/Product-page";
 
 function App() {
   return (
     <div className="">
       {/* <Accordion /> */}
-
       {/* <ChangeColor /> */}
       {/* <Starrating noofStars={10} /> */}
       {/* <ImageSlider
