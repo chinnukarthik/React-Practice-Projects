@@ -1,7 +1,10 @@
 // import Accordion from "./assets/accodion/accodion";
 // import Starrating from "./assets/Star Rating";
 
-import ProductShowcase from "./assets/Product-page";
+import Treeview from "./assets/tree-view";
+import menus from "./assets/tree-view/data";
+
+// import ProductShowcase from "./assets/Product-page";
 
 function App() {
   return (
@@ -14,7 +17,8 @@ function App() {
         limit={"10"}
         page={"1"}
       /> */}
-      <ProductShowcase />
+      {/* <ProductShowcase /> */}
+      <Treeview menus={menus} />
     </div>
   );
 }
