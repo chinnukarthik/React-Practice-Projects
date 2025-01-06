@@ -12,7 +12,7 @@ function MenuItems({ item }) {
   console.log(displayView);
 
   return (
-    <li className="px-4 py-0.5">
+    <li className="px-4 py-0.5 text-white">
       <div className="flex gap-4">
         <p>{item.label}</p>
         {item && item.children && item.children.length > 0 && (

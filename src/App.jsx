@@ -1,8 +1,10 @@
 // import Accordion from "./assets/accodion/accodion";
 // import Starrating from "./assets/Star Rating";
 
-import Treeview from "./assets/tree-view";
-import menus from "./assets/tree-view/data";
+import QrCodeGnenerator from "./assets/Qr code generator";
+
+// import Treeview from "./assets/tree-view";
+// import menus from "./assets/tree-view/data";
 
 // import ProductShowcase from "./assets/Product-page";
 
@@ -18,7 +20,8 @@ function App() {
         page={"1"}
       /> */}
       {/* <ProductShowcase /> */}
-      <Treeview menus={menus} />
+      {/* <Treeview menus={menus} /> */}
+      <QrCodeGnenerator />
     </div>
   );
 }
