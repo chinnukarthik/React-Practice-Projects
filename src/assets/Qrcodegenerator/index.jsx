@@ -19,8 +19,10 @@ function QrCodeGnenerator() {
           onChange={(e) => setInput(e.target.value)}
           value={input}
         />
+
         <button
           onClick={handleClick}
+          className="border border-gray-500 rounded ml-4"
           disabled={input && input.trim() !== "" ? false : true}
         >
           Generate

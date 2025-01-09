@@ -13,7 +13,7 @@ function ImageSlider({ url, limit = 5, page = 1 }) {
       const response = await fetch(`${url}?page=${page}&limit=${limit}`);
       const data = await response.json();
 
-      if (Array.isArray(data)) {
+      if (data) {
         setImages(data);
       } else {
         setErrorMessage("Failed to fetch images");
@@ -24,9 +24,10 @@ function ImageSlider({ url, limit = 5, page = 1 }) {
       setLoading(false);
     }
   }
+  console.log(image);
   useEffect(() => {
     if (url) fetchImages();
-  }, [url, limit, page]);
+  }, [url]);
 
   if (loading) {
     return <div>Loading please wait....</div>;
@@ -43,23 +44,24 @@ function ImageSlider({ url, limit = 5, page = 1 }) {
   }
 
   return (
-    <div className="relative items-center">
+    <div className="relative flex justify-center w-lvw ">
       {image.length > 0 && (
-        <div>
+        <div className="w-1/2">
           <BsArrowLeftCircleFill
             size={40}
-            className="absolute top-1/2 left-2.5 fill-slate-100"
+            className="absolute top-1/2 left-[22%] fill-green-400"
             onClick={handlePrevious}
           />
+
           <img
             src={image[slider]?.download_url}
             alt={`image- ${slider + 1}`}
-            className="w-full top-1/2 left-2.5"
+            className=" top-1/2 left-2.5"
             color="white"
           />
           <BsArrowRightCircleFill
             size={40}
-            className="absolute top-1/2 fill-slate-100 right-2.5"
+            className="absolute top-1/2 fill-green-400 right-[22%]"
             onClick={handleNext}
           />
           <div
