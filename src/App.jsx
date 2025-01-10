@@ -1,9 +1,8 @@
 // import Accordion from "./assets/accodion/accodion";
 // import Starrating from "./assets/Star Rating";
 // import ImageSlider from "./assets/image-slider";
-
-import LightAndDarkMode from "./assets/light_dark_mode/light_dark";
-
+// import LightAndDarkMode from "./assets/light_dark_mode/light_dark";
+import ScrollPercentageBar from "./assets/Scroll-Percentage/scroll";
 // import QrCodeGnenerator from "./assets/Qr code generator";
 
 // import Treeview from "./assets/tree-view";
@@ -25,8 +24,8 @@ function App() {
       {/* <ProductShowcase /> */}
       {/* <Treeview menus={menus} /> */}
       {/* <QrCodeGnenerator /> */}
-
-      <LightAndDarkMode />
+      {/* <LightAndDarkMode /> */}
+      <ScrollPercentageBar url={"https://dummyjson.com/products?limit=100"} />
     </div>
   );
 }
