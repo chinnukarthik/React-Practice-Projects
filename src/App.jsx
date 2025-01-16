@@ -2,8 +2,10 @@
 // import Starrating from "./assets/Star Rating";
 // import ImageSlider from "./assets/image-slider";
 // import LightAndDarkMode from "./assets/light_dark_mode/light_dark";
-import ScrollPercentageBar from "./assets/Scroll-Percentage/scroll";
+// import ScrollPercentageBar from "./assets/Scroll-Percentage/scroll";
 // import QrCodeGnenerator from "./assets/Qr code generator";
+import Data from "./assets/TabSwitching/tabs";
+
 
 // import Treeview from "./assets/tree-view";
 // import menus from "./assets/tree-view/data";
@@ -25,7 +27,8 @@ function App() {
       {/* <Treeview menus={menus} /> */}
       {/* <QrCodeGnenerator /> */}
       {/* <LightAndDarkMode /> */}
-      <ScrollPercentageBar url={"https://dummyjson.com/products?limit=100"} />
+      {/* <ScrollPercentageBar url={"https://dummyjson.com/products?limit=100"} /> */}
+      <Data />
     </div>
   );
 }
