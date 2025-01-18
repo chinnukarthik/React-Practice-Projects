@@ -4,11 +4,11 @@
 // import LightAndDarkMode from "./assets/light_dark_mode/light_dark";
 // import ScrollPercentageBar from "./assets/Scroll-Percentage/scroll";
 // import QrCodeGnenerator from "./assets/Qr code generator";
-
-import Tabs from "./assets/Tabs-switching/tabs";
-
+// import Tabs from "./assets/Tabs-switching/tabs";
 // import Treeview from "./assets/tree-view";
 // import menus from "./assets/tree-view/data";
+
+import Modal from "./assets/Modal-popup/Modal";
 
 // import ProductShowcase from "./assets/Product-page";
 
@@ -28,7 +28,8 @@ function App() {
       {/* <QrCodeGnenerator /> */}
       {/* <LightAndDarkMode /> */}
       {/* <ScrollPercentageBar url={"https://dummyjson.com/products?limit=100"} /> */}
-      <Tabs />
+      {/* <Tabs /> */}
+      <Modal />
     </div>
   );
 }
