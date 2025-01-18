@@ -7,8 +7,8 @@ function ScrollPercentageBar({ url }) {
   const [PercentageScroll, setPercentageScorll] = useState(0);
 
   async function fetchContent(getUrl) {
+    setLoading(true);
     try {
-      setLoading(true);
       const response = await fetch(getUrl);
       const data = await response.json();
       if (data && data.products && data.products.length > 0) {
@@ -34,6 +34,7 @@ function ScrollPercentageBar({ url }) {
       document.documentElement.clientHeight;
     setPercentageScorll((scrolled / height) * 100);
   }
+
   useEffect(() => {
     window.addEventListener("scroll", handleScrollPercentage);
     return () => {
@@ -60,7 +61,7 @@ function ScrollPercentageBar({ url }) {
       </div>
       <div className="flex items-center flex-col mt-12 gap-1">
         {content && content.length > 0
-          ? content.map((item) => <p>{item.title}</p>)
+          ? content.map((item, index) => <p key={index}>{item.title}</p>)
           : null}
       </div>
     </div>
